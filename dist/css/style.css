@@ -23,6 +23,9 @@ ul {
   .container {
     width: 1000px; } }
 
+.menu .nano .nano-content {
+  padding-right: 20px; }
+
 .nano {
   position: relative; }
 
@@ -39,6 +42,7 @@ ul {
   background: #555 url('../../images/menu-bg.jpg') repeat left top;
   left: -285px;
   height: 100%;
+  padding-top: 51px;
   position: fixed;
   z-index: 1;
   width: 285px; }
@@ -88,9 +92,9 @@ ul {
     margin-bottom: 5px; }
 
 .background {
-  background-image: url('images/chicago-night.jpg');
   height: 100%;
   width: 100%;
+  padding-top: 51px;
   position: relative; }
 
 .navbar-default {
@@ -102,21 +106,91 @@ ul {
   .navbar-default .navbar-collapse .navbar-nav a {
     color: white; }
 
-#my-processes h1 {
+.content-btn {
+  font-weight: bold;
+  color: #fff; }
+
+.green-btn {
+  background-color: #abc12d; }
+
+section h1 {
   background-color: #abc12d;
   color: white;
   padding: 20px;
   margin-bottom: 50px;
   margin-top: 0; }
-#my-processes h3 {
+section h3 {
   color: #2d2f34;
   margin-top: 40px; }
-#my-processes .form-group .form-label {
-  margin-right: 10px;
-  font-size: 18px;
-  font-weight: normal; }
-#my-processes .form-group .form-control {
-  display: inline-block;
-  width: 320px; }
-#my-processes .form-group input[type='number'] {
-  width: 60px; }
+section .form-block {
+  margin-bottom: 30px; }
+  section .form-block .title {
+    color: grey;
+    font-size: 16px; }
+  section .form-block .description {
+    color: #333;
+    font-size: 24px; }
+section .form-group {
+  margin-bottom: 30px; }
+  section .form-group .img-responsive {
+    width: 100%;
+    height: auto; }
+  section .form-group .button-group {
+    margin: 10px 0; }
+  section .form-group .form-label {
+    padding-top: 7px;
+    vertical-align: middle;
+    padding-right: 10px;
+    font-size: 16px;
+    color: grey;
+    font-weight: normal; }
+  section .form-group .form-control {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: auto; }
+  section .form-group input[type='number'] {
+    width: 60px; }
+  section .form-group .alert-error-message {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: red;
+    padding: 3px 5px; }
+  section .form-group .alert-success-message {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #abc12d;
+    padding: 3px 5px; }
+section .form-group-vertical {
+  width: 100%;
+  /*textarea.form-control {
+      min-height: 100px;
+      width: 100%;
+    }*/ }
+  section .form-group-vertical .button-group {
+    display: block; }
+    section .form-group-vertical .button-group .form-control {
+      color: #abc12d;
+      margin: 5px 0; }
+  section .form-group-vertical .form-label {
+    display: block;
+    color: grey; }
+  section .form-group-vertical .default-btn {
+    color: #438138;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: block;
+    width: auto;
+    margin: 5px 0; }
+section .accordion-dropdown-menu a {
+  display: block; }
+section .accordion-dropdown-menu .panel-body a {
+  color: grey; }
+section .map {
+  width: 100%;
+  min-height: 200px; }
