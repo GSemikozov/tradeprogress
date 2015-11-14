@@ -23,12 +23,24 @@ ul {
   .container {
     width: 1000px; } }
 
+.nano {
+  position: relative; }
+
+.nano .nano-pane {
+  background: #555;
+  width: 8px;
+  right: 1px;
+  margin: 5px; }
+
+.nano .nano-slider {
+  background: #fff; }
+
 .menu {
   background: #555 url('../../images/menu-bg.jpg') repeat left top;
   left: -285px;
   height: 100%;
-  overflow-y: auto;
   position: fixed;
+  z-index: 1;
   width: 285px; }
   .menu ul {
     border-top: 1px solid #555;
@@ -59,15 +71,18 @@ ul {
 .icon-menu {
   color: grey;
   position: absolute;
+  z-index: 9999;
+  right: -38px;
+  top: 50%;
+  margin-top: -10px;
   display: inline-block;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px;
+  padding: 5px 5px 5px 10px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background: #000; }
   .icon-menu img {
     margin-right: 5px;
     margin-bottom: 5px; }
@@ -76,8 +91,16 @@ ul {
   background-image: url('images/chicago-night.jpg');
   height: 100%;
   width: 100%;
-  overflow-y: auto;
   position: relative; }
+
+.navbar-default {
+  background-color: #3ab4a6;
+  border-radius: 0;
+  margin-bottom: 0; }
+  .navbar-default .navbar-brand {
+    color: white; }
+  .navbar-default .navbar-collapse .navbar-nav a {
+    color: white; }
 
 #my-processes h1 {
   background-color: #abc12d;
