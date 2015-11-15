@@ -1,0 +1,1753 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>investor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/nanoscroller.css">
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/menu.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="menu" class="menu">
+    <div class="icon-menu">
+        <img src="images/menu-ham-icon.png">
+    </div>
+    <div class="nano">
+        <div class="nano-content">
+            <!-- Иконка меню -->
+            <div class="icon-close">
+                <img src="images/close-btn.png">
+            </div>
+            <!-- Меню -->
+            <div id='cssmenu'>
+                <ul role="tablist">
+                    <li class='has-sub'><a href='#'>Карточка предприятия</a>
+                        <ul>
+                            <li class="active" role="presentation"><a href='#user-data' aria-controls="user-data" role="tab" data-toggle="tab">Данные о участнике системы</a></li>
+                            <li role="presentation"><a href='#additional-info' aria-controls="additional-info" role="tab" data-toggle="tab">Дополнить информацию</a></li>
+                        </ul>
+                    </li>
+                    <li class='has-sub'><a href='#'>Мои запущенные процессы</a>
+                        <ul>
+                            <li><a href='#processes-cycle' aria-controls="processes-cycle" role="tab" data-toggle="tab">Цикличные процессы</a></li>
+                            <li><a href='#development-cycle' aria-controls="development-cycle" role="tab" data-toggle="tab">Циклы развития</a></li>
+                            <li><a href='#development-algorithms' aria-controls="development-algorithms" role="tab" data-toggle="tab">Алгоритмы развития</a></li>
+                        </ul>
+                    </li>
+                    <li class='has-sub'><a href='#'>Запуск новых процессов</a>
+                        <ul>
+                            <li><a href='#new-processes' aria-controls="new-processes" role="tab" data-toggle="tab">Новый цикл</a></li>
+                            <li><a href='#new-algorithms' aria-controls="new-algorithms" role="tab" data-toggle="tab">Новый алгоритм</a></li>
+                            <li><a href='#choose-new-processes' aria-controls="choose-new-processes" role="tab" data-toggle="tab">Подбор новых процессов</a></li>
+                        </ul>
+                    </li>
+                    <li class='has-sub'><a href='#'>Модуль диспетчеризации процессов</a>
+                        <ul>
+                            <li><a href='#dispatching-processes' aria-controls="dispatching-processes" role="tab" data-toggle="tab">Критические показатели</a></li>
+                            <li><a href='#critical-indicators' aria-controls="critical-indicators" role="tab" data-toggle="tab">Основные показатели  </a></li>
+                            <li><a href='#market-trend' aria-controls="market-trend" role="tab" data-toggle="tab">Рыночная тенденция</a></li>
+                            <li><a href='#maintenance-activities' aria-controls="maintenance-activities" role="tab" data-toggle="tab">Модуль сопровождения деятельности </a></li>
+                            <li><a href='#delegate-management' aria-controls="delegate-management" role="tab" data-toggle="tab">Модуль онлайн диспетчеризации</a></li>
+                        </ul>
+                    </li>
+                    <li class='has-sub'><a href='#'>Карта возможностей</a>
+                        <ul>
+                            <li><a href='#maps' aria-controls="maps" role="tab" data-toggle="tab">Карта</a></li>
+                            <li><a href='#mind-map' aria-controls="mind-map" role="tab" data-toggle="tab">Отраслевая «Карта ума»</a></li>
+                            <li><a href='#incoming-offers' aria-controls="incoming-offers" role="tab" data-toggle="tab">Входящие предложения</a></li>
+                            <li><a href='#map-proposals' aria-controls="map-proposals" role="tab" data-toggle="tab">Именные Предложения Вашей компании</a></li>
+                            <li><a href='#open-offers' aria-controls="open-offers" role="tab" data-toggle="tab">Открытые предложения  Вашей компании</a></li>
+                        </ul>
+                    </li>
+                    <li class='has-sub'><a href='#'>Лента  событий</a>
+                        <ul>
+                            <li><a href='#news-local' aria-controls="news-regional" role="tab" data-toggle="tab">Локальный уровень</a></li>
+                            <li><a href='#news-federal' aria-controls="news-federal" role="tab" data-toggle="tab">Федеральный</a></li>
+                            <li><a href='#news-regional' aria-controls="actual-news" role="tab" data-toggle="tab">Макроэкономический</a></li>
+                            <li><a href='#actual-news' aria-controls="documents" role="tab" data-toggle="tab">Актуальные новости</a></li>
+                            <li><a href='#documents' aria-controls="store-offers" role="tab" data-toggle="tab">Официальные государственные и муниципальные  документы</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#store-offers' aria-controls="store-offers" role="tab" data-toggle="tab">Магазин предложений</a></li>
+                    <li class='has-sub'><a href='#'>Аналитико-статистический модуль</a>
+                        <ul>
+                            <li><a href='#analytical-statistics-module' aria-controls="analytical-statistics-module" role="tab" data-toggle="tab">Анализ собственного предприятия</a></li>
+                            <li><a href='#analytical-statistics-own-module' aria-controls="analytical-statistics-own-module" role="tab" data-toggle="tab">Анализ локальной территории</a></li>
+                            <li><a href='#analytical-statistics-local-module' aria-controls="analytical-statistics-local-module" role="tab" data-toggle="tab">Статистический модуль экономических показателей</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#consulting' aria-controls="consulting" role="tab" data-toggle="tab">Консалтинг и онтологический инжиниринг</a></li>
+                    <li><a href='#platform-contact' aria-controls="platform-contact" role="tab" data-toggle="tab">Связаться с платформой</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- header -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <select name="forma" onchange="location = this.options[this.selectedIndex].value;" class="form-control">
+                        <option value="" disabled selected style='display:none;'>выберите роль: инвестор в с/х и АПК</option>
+                        <option value="index.html">производитель</option>
+                        <option value="buyer.html">покупатель</option>
+                        <option value="villager.html">сельский житель</option>
+                        <option value="urban_dweller.html">городской житель</option>
+                        <option value="local_area.html">локальная территория</option>
+                        <option value="investor.html">инвестор в с\х и АПК</option>
+                        <option value="logistics_hub.html">логистический хаб</option>
+                        <option value="processing_plant.html">перерабатывающее предприятие АПК</option>
+                        <option value="advertising_agent.html">рекламный агент</option>
+                        <option value="administrator.html">администраторская</option>
+                    </select>
+                </div>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Main body -->
+<div class="background" id="content">
+
+    <div class="nano">
+        <div class="nano-content">
+
+            <article id="investor" class="tab-content">
+
+                <section id="user-data" role="tabpanel" class="tab-pane in active">
+                    <h1>
+                        <div class="container">
+                            <b>Данные о пользователе</b>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-block">
+                                <div class="title">
+                                    Наименование организации
+                                </div>
+                                <div class="description">
+                                    КФХ Большой Урожай
+                                </div>
+                            </div>
+                            <div class="form-block">
+                                <div class="title">
+                                    Аккредитация в системе
+                                </div>
+                                <div class="description">
+                                    Инвестор  в сельское хозяйство и АПК
+                                </div>
+                            </div>
+                            <div class="form-block">
+                                <div class="title">
+                                    Рейтинг в системе
+                                </div>
+                                <div class="description">
+                                    <ul>
+                                        <li>Инвестор  в сельское хозяйство</li>
+                                        <li>Инвестор в АПК</li>
+                                        <li>Инвестор Цикла (ИЦ))\</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">юридическая карточка:</label>
+                                <div class="form-control">
+                                    Официальное наименование рус/англ; ЮЛ; ИНН…; КПП; ОГРН ; Юридический адрес; ФИО и должность руководителя, ФИО и должность представителя,
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">специализация:</label>
+                                <div class="form-control">
+                                    Инвестор  в сельское хозяйство; Инвестор в АПК;  Инвестор Цикла (ИЦ); долгосрочный инвестор, IT.
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">наименование огранизации:</label>
+                                <div class="form-control">
+                                    Экстенсивен Е.У. Предпренимателен И.И. Долгосрочный В,У. Цикл А.П. Л, Лесолюбов А.У.
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">Контакты руководителя:</label>
+                                <div class="form-control">
+                                    Муниципальное Образование "Ломоносовский район" , Богом забытое сельское поселение "Пойменное", ТОС "Община развития детей", Сельское муниципальное образование "Ранее-хлопко-специализированное"
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">Телефон:</label>
+                                <div class="form-control">
+                                    7 963 777 35 37
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">е-мейл:</label>
+                                <div class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">Местоположение:</label>
+                                <div class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">электронная подпись:</label>
+                                <div class="form-control">Функция недоступна</div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="additional-info" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Дополнить информацию</b>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">
+                                    Получить дополнительную сертификацию, разрешения
+                                </label>
+                                <div class="button-group form-group-vertical">
+                                    <button type="button" class="btn content-btn dark-green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">
+                                    Заполнить заявку  для получения отметки в системе  «открыт к сотрудничеству»
+                                </label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn dark-green-btn">Заполнить</button>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">
+                                    Заполнить заявку  для повышения уровня тки в системе
+                                </label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn dark-green-btn">Заполнить</button>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">
+                                    Заявка на сертификацию
+                                </label>
+                                <div class="button-group form-group-vertical">
+                                    <button type="button" class="btn content-btn dark-green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">
+                                    Заявка на контроль качества
+                                </label>
+                                <div class="button-group form-group-vertical">
+                                    <button type="button" class="btn content-btn dark-green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Кооперация в рамках аккредитованной роли в системе:</label>
+                                <span class="alert-success-message">функция доступна</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить информацию для локальной кооперации:</label>
+                                <span class="alert-success-message">Данные заполнены</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить информацию для региональной  коопераци:</label>
+                                <span class="alert-success-message">Данные заполнены</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить информацию для федеральной  кооперации:</label>
+                                <span class="alert-error-message">не заполнено</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить информацию на вертикальную интеграцию предприятия:</label>
+                                <span class="alert-success-message">Требуется заполнение дополнительной информации экономического характера</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить заявку на получение кредитования:</label>
+                                <span class="alert-success-message">Функция доступна</span>
+                            </div>
+                            <div class="form-group form-group-vertical">
+                                <label class="form-label">
+                                    Заполнить заявку на лизинг
+                                </label>
+                                <div class="button-group form-group-vertical">
+                                    <button type="button" class="btn content-btn green-btn">Заполнить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить заявку на участие в субсидировании:</label>
+                                <span class="alert-success-message">Функция недоступна</span>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="processes-cycle" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Мои запущенные процессы</b><br>
+                            <span>цикличные процессы</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Процесс 1:
+                            </h3>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    Инвестиции в модуль "Логистика"  цепочки  Производство-Переработка
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Тип процесса:</label>
+                                <div class="form-control">
+                                    Цикличное инвестирование
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Состояние:</label>
+                                <div class="form-control">
+                                    Цикл 7 из 17
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Описание процесса:</label>
+                                <div class="form-control">
+                                    Инвестиции в модуль "Логистика"  цепочки  Производство-Переработка. Производствокетчупов, консервация овощной продукции
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Тип предложения:</label>
+                                <div class="form-control">
+                                    Процесс открыт в рамках цепочки
+                                </div>
+                            </div>
+                            <h3>
+                                Автоматизация исполнения процесса в системе:
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Полная автоматизация</label>
+                            </div>
+                            <h3>
+                                Степень автоматизации:
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Полная автоматизация <button type="button" class="btn default-btn">изм.</button></label>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                </section>
+                <section id="development-cycle" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Мои запущенные процессы</b><br>
+                            <span>Цикл развития</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Процесс 1:
+                            </h3>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    Исследование  рынка передвижных перерабатывающих модулей.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Тип процесса:</label>
+                                <div class="form-control">
+                                    Комплексное исследование с применением онтологического инжениринга
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Состояние:</label>
+                                <div class="form-control">
+                                    завершенность создания  - 74%
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Описание процесса:</label>
+                                <div class="form-control">
+                                    Исследование  рынка передвижных перерабатывающих модулей.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Открытость процесса в системе:</label>
+                                <div class="form-control">
+                                    Закрыто
+                                </div>
+                            </div>
+                            <h3>
+                                Автоматизация исполнения процесса:
+                            </h3>
+                            <div class="form-group">
+                                <div class="form-control"> На тактическом  управлении системой</div>
+                            </div>
+                            <h3>
+                                Степень автоматизации:
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Автоматическое оповещение о ответах; о предложениях</label>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                </section>
+                <section id="development-algorithms" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Мои запущенные процессы</b><br>
+                            <span>Алгоритмы развития</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Процесс 1:
+                            </h3>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    Долевое инвестирование в модульный тепличных комплекс (2 очередь)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Тип процесса:</label>
+                                <div class="form-control">
+                                    Инвестирование долгосрочное
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Состояние:</label>
+                                <div class="form-control">
+                                    Запуск 2 очереди планируется через 4 месяца
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Описание процесса:</label>
+                                <div class="form-control">
+                                    евое инвестирование в модульный тепличных комплекс (2 очередь)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Открытость процесса в системе:</label>
+                                <div class="form-control">
+                                    Закрвто, открыто для участников сделки
+                                </div>
+                            </div>
+                            <h3>
+                                Автоматизация исполнения процесса:
+                            </h3>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    Автоматический отчет по результатм месяца о развитии проекта; онайн-контроль выполнения обязательств
+                                </div>
+                            </div>
+                            <h3>
+                                Степень автоматизации:
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Начало активной реализации процесса ожидается с 15.08.20016</label>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                </section>
+                <section id="new-processes" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Запуск новых процессов</b><br>
+                            <span>Новый цикл</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 accordion-dropdown-menu">
+                                <div class="panel-group" id="accordion">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Процессы в рамках роли &#8582;</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li><a href="#">Создать новое с/х, АПК предприятие</a></li>
+                                                    <li><a href="#">цикличное инвестирование, долгосрочное инвестирование</a></li>
+                                                    <li><a href="#">бизнес-развитие локальных территорий</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">экстенсификация (расширение производства):</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Кооперация:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Интеграция:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Народное финансирование:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Иные действия:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="new-algorithms" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Запуск новых процессов</b><br>
+                            <span>Новый алгоритм</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 accordion-dropdown-menu">
+                                <div class="panel-group" id="accordion2">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Процессы в рамках роли &#8582;</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li><a href="#">Прямая цена</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">экстенсификация (расширение производства):</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Кооперация:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Интеграция:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Народное финансирование:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label class="form-label">Иные действия:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="choose-new-processes" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Запуск новых процессов</b><br>
+                            <span>Подбор новых процессов</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    Единая поисковая страница предложения
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Опубликовать предложение о сотрудничестве:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Опубликовать</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Поиск по организациям, открытым к сотрудничеству:</label>
+                                <div class="form-control">
+                                    Единая поисковая страница участников платформы
+                                </div>
+                            </div>
+                            <h3>
+                                КООПЕРАЦИЯ
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Поиск вариантов локальной кооперации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Начать поиск</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Поиск вариантов региональной  кооперации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Начать поиск</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Поиск вариантов федеральной  кооперации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Начать поиск</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h3>ИТЕГРАЦИЯ:</h3>
+                                <div class="form-control">
+                                    Функция недоступна
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Поиск  вертикальной интеграции предприятия:</label>
+                                <div class="form-control">
+                                    Нет данных, заполните строку в модуле "Дополнить информацию"
+                                </div>
+                            </div>
+                            <h3>
+                                ИНВЕСТИРОВАНИЕ
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Поиск инвестиций:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Начать поиск</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Поиск по инвесторам:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Начать поиск</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Оставить предложение об инвестировании:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Опубликовать</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Оставить заявку о привлечении  инвестицийй:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Опубликовать</button>
+                                </div>
+                            </div>
+                            <h3>
+                                КРЕДИТОВАНИЕ
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Лизинг:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Поиск</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Субсидирование:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Поиск</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="dispatching-processes" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Модуль диспетчеризации процессов</b><br>
+                            <span>Основные показатели</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Показатели функционирования
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Показатель 1:</label>
+                                <div class="form-control">
+                                    Высокорентабельные инвестиции в круглогодичное производство
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Показатель 2:</label>
+                                <div class="form-control">
+                                    Высокорентабельные инвестиции в семенной материал
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Показатель 3:</label>
+                                <div class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Степень диспетчеризации:</label>
+                                <div class="form-control">
+                                    Оповещение системой
+                                </div>
+                            </div>
+                            <h3>
+                                Установить
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">показатели в рамках роли:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label"> показатели в рамках сектора отрасли:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label"> показатели в рамках сектора отрасли:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">иные:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h3>Настроить:</h3>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">  шаг  оповещения при изменения показателя: день/шаг</label>
+                                <div class="form-control">
+                                    Раз в день
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label"> автоматическое регулирование деятельности при достижении показателя</label>
+                                <div class="form-control">
+                                    Модуль не подключен
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="critical-indicators" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Модуль диспетчеризации процессов</b><br>
+                            <span>Критические показатели</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Показатели функционирования
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Показатель 1:</label>
+                                <div class="form-control">
+                                    Не выполнение графика инвестирования
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Показатель 2:</label>
+                                <div class="form-control">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Показатель 3:</label>
+                                <div class="form-control">
+
+                                </div>
+                            </div>
+                            <h3>
+                                Установить
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">показатели в рамках роли:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label"> показатели в рамках сектора отрасли:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label"> показатели в рамках сектора отрасли:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">иные:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h3>Настроить:</h3>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">степень оповещения при достижении, при подходе к показателю</label>
+                                <div class="form-control">
+                                    При  подходе к показателю
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label"> автоматическое регулирование деятельности при достижении показателя</label>
+                                <div class="form-control">
+                                    При  подходе к показателю
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <h3>Подключить:</h3>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Автоматическое получение аналитики по критическим показателям</label>
+                                <div class="form-control">
+                                    Подключено
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Автоматическое реагирование системы на критические показатели</label>
+                                <div class="form-control">
+                                    Частично подключено
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Диспетчеризацию на момент форс-мажорной ситуации при отсутствии управления</label>
+                                <div class="form-control">
+                                    Отсутствует
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="market-trend" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Модуль диспетчеризации процессов</b><br>
+                            <span>Рыночная тенденция</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Схема местоположения организации среди аналогов:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Структура рынка и место организации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Анализ выбранной стратегии:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Анализ запущенных процессов:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Анализ рыночных трендов:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="maintenance-activities" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Модуль диспетчеризации процессов</b><br>
+                            <span>Сопровождение деятельности</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Подключенные программыдиспетчеризации
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Процесс диспетчеризации 1:</label>
+                                <div class="form-control">
+                                    Диспетчиризация   процессов  инвестирования
+                                </div>
+                                <h3>
+                                    Настроить
+                                </h3>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Процесс диспетчеризации 2:</label>
+                                <div class="form-control">
+                                    Отсутствует
+                                </div>
+                                <h3>
+                                    Настроить
+                                </h3>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Подключить доступные функциисопровождения деятельности:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подключить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Открыть новые возможностисопровождения деятельности:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Открыть</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="delegate-management" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Модуль диспетчеризации процессов</b><br>
+                            <span>делегирование управления деятельностью</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Подключенные программы диспетчеризации
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Программа 1:</label>
+                                <div class="form-control">
+                                    Предстьавление интересов
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Настроить:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Настроить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Программа 2:</label>
+                                <div class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Настроить:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Настроить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Делегирование:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Делегирование</button>
+                                </div>
+                            </div>
+                            <h3>
+                                Настроить делегирование управление процессами на исполнителя
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Подключить своего работника:</label>
+                                <div class="form-control">
+                                    Подключен
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Найти работника:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Найти</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Передать управление   процессами диспетчеру  платформы:</label>
+                                <div class="form-control">
+                                    не подключена
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Передать тактическое управление:</label>
+                                <div class="form-control">
+                                    Нет
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Передать стратегическое управление:</label>
+                                <div class="form-control">
+                                    нет
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Настройка:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Настройка</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Варианта:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="maps" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Карта возможностей</b><br>
+                            <span> Карта</span>
+                        </div>
+                    </h1>
+                </section>
+                <section id="mind-map" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Карта возможностей</b><br>
+                            <span> "Карта Ума"</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                «Карта ума» Отрасли/сектора отрасли
+                            </h3>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <img src="images/map1.jpg" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>
+                                «Карта ума» аккредитованной роли
+                            </h3>
+                            <div class="form-group">
+                                <img src="images/map2.jpg" class="img-responsive" alt="">
+                            </div>
+                            <h3>
+                                Настраиваемая «Карта ума» пользователя
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Настраиваемая «Карта ума» пользователя:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                    <button type="button" class="btn content-btn green-btn">Изменить</button>
+                                </div>
+                                <img src="images/map3.jpg" class="img-responsive" alt="">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="map-proposals" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Карта возможностей</b><br>
+                            <span>Ваши предложения</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Оставить предложение:</label>
+                                <div class="form-control">
+                                    Вкладываюсь в It-платформы, связанные с отраслю прогрессивонго растениеводства
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Тип предложения:</label>
+                                <div class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Условия предложения:</label>
+                                <div class="form-control">
+                                    предоставление прототипа
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Комментарий:</label>
+                                <div class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Все мои предложения:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                    <button type="button" class="btn content-btn green-btn">Изменить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Статистика моих предложений:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <h3>
+                                Настройка
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Оповещение о Ваших предложениях:</label>
+                                <div class="form-control">
+                                    Включена
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="incoming-offers" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Карта возможностей</b><br>
+                            <span>Входящие Предложения</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Именные предложения
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Предложение1 (перейти на предложение):</label>
+                                <div class="form-control">
+                                    Тепличный Комплекс
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Аккредитованная роль  в системе и наименование лица:</label>
+                                <div class="form-control">
+                                    Инвестор в сельское хозяйство
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Местоположение:</label>
+                                <div class="form-control">
+                                    СЗФО
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Подробнее:</label>
+                                <div class="form-control">
+                                    Строительство модульного тепличного комплекса Есть ЗУ, инвестиции 70%,, Пред ТЭО, Бизнес-план
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">суть предложения:</label>
+                                <div class="form-control">
+                                    Под сохранение выращу картофель Впрок
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Согласиться:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Согласиться</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Предварительно:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Предварительно</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Окончательно:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Окончательно</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Предложить иные условия:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Предложить иные условия</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Отказаться:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Отказаться</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Предложение2:</label>
+                                <div class="form-control">
+                                    Инвестируйте в логистическую цепочку "шило на мыло" с прибыльностью 8% годовых
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Предложение 3:</label>
+                                <div class="form-control">
+                                    Проводим исследования локальных территорий
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Статистика именных   предложений:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Отклоненные предложения:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <h3>
+                                Настройка
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Оповещение  о   предложениях:</label>
+                                <div class="form-control">
+                                    Моментально, раз в день
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Откликаться автоматически на предложения типа:</label>
+                                <div class="form-control">
+                                    Отключена
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="open-offers" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Карта возможностей</b><br>
+                            <span>Открытые предложения</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Поиск предложений:</label>
+                                <div class="form-control">
+                                    Поисковая страница
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Автоматический поиск предложений под Ваш профиль:</label>
+                                <div class="form-control">
+                                    Поисковая страница
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Облако предложений:</label>
+                                <div class="form-control">
+                                    О
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Статистика предложений:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <h3>
+                                Настройка
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Оповещение о Ваших предложениях:</label>
+                                <div class="form-control">
+                                    Раз в день
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Откликаться автоматически на предложения типа:</label>
+                                <div class="form-control">
+                                    Отключена
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="news-local" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Лента  событий</b><br>
+                            <span>Локальный уровень</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">События того же типа аккредитации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">События другого типа аккредитации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="news-regional" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Лента  событий</b><br>
+                            <span>Региональный уровень</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">События того же типа аккредитации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">События другого типа аккредитации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="news-federal" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Лента  событий</b><br>
+                            <span>Федеральный уровень</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">События того же типа аккредитации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">События другого типа аккредитации:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="actual-news" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Лента  событий</b><br>
+                            <span>Открытое Информирование</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                События локального уровня
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Новость 1:</label>
+                                <div class="form-control">
+                                    Новость заточенная под получателя
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Новость 2:</label>
+                                <div class="form-control">
+                                    Новость заточенная под получателя
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Архив новостей</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Преддложить новость</label>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="documents" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Лента  событий</b><br>
+                            <span>Актуальные государственные и муниципальные  документы</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Документ 1:</label>
+                                <div class="form-control">
+                                    ФЗО местном самоуправлении
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Документ 2:</label>
+                                <div class="form-control">
+                                    Постановление администрации № 234
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="store-offers" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Магазин предложений </b><br>
+                            <span>Товары и комплектующие</span>
+                        </div>
+                    </h1>
+                </section>
+                <section id="analytical-statistics-module" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Аналитико-статистический модуль</b><br>
+                            <span>Модуль экономической статистики</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <img src="images/region_stat.png" alt="" class="img-responsive">
+                    </div>
+                </section>
+                <section id="analytical-statistics-own-module" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Аналитико-статистический модуль</b><br>
+                            <span>Анализ собственного предприятия</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <img src="images/stat.png" alt="" class="img-responsive">
+                    </div>
+                </section>
+                <section id="analytical-statistics-local-module" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Аналитико-статистический модуль</b><br>
+                            <span>Анализ локальной территории</span>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <img src="images/stat2.png" alt="" class="img-responsive">
+                        <img src="images/stat_delta.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="container">
+                        <h3>
+                            Инфографика экономических показателей локальной территорий
+                        </h3>
+                        <div class="form-group">
+                            <label class="form-label">Официальная статистика:</label>
+                            <div class="button-group">
+                                <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Статистика на основе информации платформы:</label>
+                            <div class="button-group">
+                                <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Провести собственное исследование:</label>
+                            <div class="button-group">
+                                <button type="button" class="btn content-btn green-btn">Оформить заказ</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Предложить аналитику:</label>
+                            <div class="button-group">
+                                <button type="button" class="btn content-btn green-btn">открыть форму</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control">Оповестить администрацию локальной территории</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control">Письмо</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control">Заявление</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control">Заказать исследование локальной территории</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control">Заказать исследование отраслевое исследование</label>
+                        </div>
+                        <h3>
+                            Карта локальной территории
+                        </h3>
+                    </div>
+                </section>
+                <section id="consulting" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Консалтинг и онтологический инжиниринг</b><br>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <h3>
+                                Звонок на «горячую линию»
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы функционирования системы:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы в рамках аккредитованной роли:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы уровня локальной территории:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <h3>
+                                Онлайн-видео консалтинг
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить заявку:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы в рамках аккредитованной ролии:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы уровня локальный:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы уровня региональный:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы уровня федеральный:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Вопросы кооперации, интеграции:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Позвонить</button>
+                                </div>
+                            </div>
+                            <h3>
+                                Комплексный консалтинг
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Заполнить заявку:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Заполнить</button>
+                                </div>
+                            </div>
+                            <h3>
+                                Онтологический инжиниринг
+                            </h3>
+                            <div class="form-group">
+                                <label class="form-label">Интеллектуально-адаптивный подбор местного сырья для региональной сети переработки:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">прогноз плодородия:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">прогноз развития  территории:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">прогнозирование  спроса , уровня цен,  состава сезонной продукции:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">обеспечение финансовых инструментов растительной биржи (фьючерсы, деривативы):</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">аккумуляция и распределение в цепи потребитель-производитель:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">сетевой ресурс сертификации и контроля качества; управление устойчивостью территори:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section id="platform-contact" role="tabpanel" class="tab-pane">
+                    <h1>
+                        <div class="container">
+                            <b>Связаться с платформой</b><br>
+                        </div>
+                    </h1>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Предложения о сотрудничестве участникам платформы:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Предложения о сотрудничестве инвесторам:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Отправить предложение о сотрудничестве:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Отправить информацию о некорректной работе платформы:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Отправить информацию о недобросовестном поведении участника платформы:</label>
+                                <div class="button-group">
+                                    <button type="button" class="btn content-btn green-btn">Начать заполнение</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-control">
+                                    О платформе
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/menu.js" type="text/javascript"></script>
+<script src="dist/js/jquery.nanoscroller.min.js" type="text/javascript"></script>
+<script src="dist/js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

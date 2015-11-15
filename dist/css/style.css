@@ -113,6 +113,9 @@ ul {
 .green-btn {
   background-color: #abc12d; }
 
+.dark-green-btn {
+  background-color: #438138; }
+
 section h1 {
   background-color: #abc12d;
   color: white;
@@ -194,3 +197,75 @@ section .accordion-dropdown-menu .panel-body a {
 section .map {
   width: 100%;
   min-height: 200px; }
+
+#buyer section h1 {
+  background-color: #438138; }
+#buyer section .form-group-vertical .button-group .form-control {
+  color: #438138; }
+#buyer section .form-group-vertical .default-btn {
+  color: #abc12d; }
+#buyer section .content-btn {
+  background-color: #438138 !important; }
+
+#villager section h1 {
+  background-color: #143248; }
+#villager section .form-group-vertical .button-group .form-control {
+  color: #143248; }
+#villager section .form-group-vertical .default-btn {
+  color: #143248; }
+#villager section .content-btn {
+  background-color: #143248 !important; }
+
+#urban_dweller section h1 {
+  background-color: #c4c5bc; }
+#urban_dweller section .form-group-vertical .button-group .form-control {
+  color: #c4c5bc; }
+#urban_dweller section .form-group-vertical .default-btn {
+  color: #c4c5bc; }
+#urban_dweller section .content-btn {
+  background-color: #c4c5bc !important; }
+
+#local-area section h1 {
+  background-color: #1a9ca0; }
+#local-area section .form-group-vertical .button-group .form-control {
+  color: #1a9ca0; }
+#local-area section .form-group-vertical .default-btn {
+  color: #1a9ca0; }
+#local-area section .content-btn {
+  background-color: #1a9ca0 !important; }
+
+#investor section h1 {
+  background-color: orange; }
+#investor section .form-group-vertical .button-group .form-control {
+  color: orange; }
+#investor section .form-group-vertical .default-btn {
+  color: orange; }
+#investor section .content-btn {
+  background-color: orange !important; }
+
+#logistic-hub section h1 {
+  background-color: cadetblue; }
+#logistic-hub section .form-group-vertical .button-group .form-control {
+  color: cadetblue; }
+#logistic-hub section .form-group-vertical .default-btn {
+  color: cadetblue; }
+#logistic-hub section .content-btn {
+  background-color: cadetblue !important; }
+
+#processing-plant section h1 {
+  background-color: indianred; }
+#processing-plant section .form-group-vertical .button-group .form-control {
+  color: indianred; }
+#processing-plant section .form-group-vertical .default-btn {
+  color: indianred; }
+#processing-plant section .content-btn {
+  background-color: indianred !important; }
+
+#advertising-agent section h1 {
+  background-color: cornflowerblue; }
+#advertising-agent section .form-group-vertical .button-group .form-control {
+  color: cornflowerblue; }
+#advertising-agent section .form-group-vertical .default-btn {
+  color: cornflowerblue; }
+#advertising-agent section .content-btn {
+  background-color: cornflowerblue !important; }
