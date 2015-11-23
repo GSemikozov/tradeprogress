@@ -95,41 +95,21 @@
 
 </div>
 
-<!-- header -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <select name="forma" onchange="location = this.options[this.selectedIndex].value;" class="form-control">
-                        <option value="" disabled selected style='display:none;'>выберите роль: Локальная территория</option>
-                        <option value="index.html">производитель</option>
-                        <option value="buyer.html">покупатель</option>
-                        <option value="villager.html">сельский житель</option>
-                        <option value="urban_dweller.html">городской житель</option>
-                        <option value="local_area.html">локальная территория</option>
-                        <option value="investor.html">инвестор в с\х и АПК</option>
-                        <option value="logistics_hub.html">логистический хаб</option>
-                        <option value="processing_plant.html">перерабатывающее предприятие АПК</option>
-                        <option value="advertising_agent.html">рекламный агент</option>
-                    </select>
-                </div>
-            </form>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+<!-- main-menu -->
+<div class="form-group main-menu">
+    <select name="forma" onchange="location = this.options[this.selectedIndex].value;" class="form-control">
+        <option value="" disabled selected style='display:none;'>выберите роль: локальная территория</option>
+        <option value="manufacturer.html">производитель</option>
+        <option value="buyer.html">покупатель</option>
+        <option value="villager.html">сельский житель</option>
+        <option value="urban_dweller.html">городской житель</option>
+        <option value="local_area.html">локальная территория</option>
+        <option value="investor.html">инвестор в с\х и АПК</option>
+        <option value="logistics_hub.html">логистический хаб</option>
+        <option value="processing_plant.html">перерабатывающее предприятие АПК</option>
+        <option value="advertising_agent.html">рекламный агент</option>
+    </select>
+</div>
 
 <!-- Main body -->
 <div class="background" id="content">
