@@ -1,0 +1,7 @@
+#cssmenu > ul > li > a {
+    background: indianred;
+}
+
+select {
+    background: #b04949 !important;
+}

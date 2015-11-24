@@ -1,0 +1,7 @@
+#cssmenu > ul > li > a {
+    background: cornflowerblue;
+}
+
+select.form-control {
+    background: #3434f6;
+}
